@@ -1,0 +1,57 @@
+body {
+	background-color: {body.bcg};
+}
+h1,h2,h3 {
+    color: {mobile.header.text};
+    background-color: {mobile.header.bcg};
+    border-color: {mobile.header.border};    
+}
+h1 a {color: {mobile.header.text};}
+form {
+    border-color: {rounded.box.border};
+}
+form .description
+{
+	border-bottom-color: {rounded.box.border};
+}
+form .row {
+    border-bottom-color: {rounded.box.border};
+}
+form #wlt-FacebookLoginButton {
+	border-bottom-color: {rounded.box.border};
+}
+a, a:active {color: {link};}
+
+.box {
+	border-color: {rounded.box.border};
+}
+
+#wlt-DealSide li.sideDeal a {color: {link};}
+
+#wlt-DealCoupons li a {color: {link};}
+
+.classic-theme-mobile #wlt-BaseLanguage .langSelector {
+border-color: {rounded.box.border};
+}
+.classic-theme-mobile #wlt-BaseLanguage a {
+border-top-color: {rounded.box.border};
+}
+
+#wlt-DealStatus h4 {color: {deal.status.text}; border-color: {deal.status.border};}
+
+.classic-theme-mobile #wlt-DealPrint h1, .classic-theme-mobile #wlt-DealPrint h3
+{
+    color: {mobile.header.text};
+    background-color: {mobile.header.bcg};
+    border-color: {mobile.header.border};
+}
+
+ul {
+    border-color: {rounded.box.border};
+}
+
+ul li {
+    border-top-color: {rounded.box.border};
+}
+
+form .buttons input, .classic-theme-mobile #wlt-DealView .buyButton {-webkit-border-image: url(./mobileButton.png) 11;}

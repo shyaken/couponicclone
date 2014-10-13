@@ -1,0 +1,73 @@
+body {background-color: {body.bcg};}
+a, a:active {color: {link};}
+a:hover, a:focus {color: {link.hover};}
+#header {background-color:{header.bcg}}
+#header h2 {color: {header.text};}
+#header h2 a {color: {header.link};}
+#footer {background-color: {footer.bcg}; color: {footer.text}; border-top-color: {footer.border};}
+#footer a{color: {footer.link};}
+#footer a:hover {color: {footer.link.hover};}
+#footer hr {background-color: {footer.border};}
+.buttons input {background-image: url(./button.png);}
+#wlt-DealSubscribe .buttons input {background-image: url(./buttonOnBlack.png);}
+
+body.splash #header {border-bottom: {header.border};}
+body.splash #header h2 {color: {header.link};}
+
+#header, #header a {color: {header.link};}
+
+#wlt-LocationSelect {background-color: {top.block.bcg}; border-color: {top.block.border}}
+#wlt-LocationSelect ul li {border-color: {top.block.border};}
+#wlt-LocationSelect ul li a:hover {background-color: {location.item.selected}}
+#wlt-LocationSelect ul li.country {background-color: {location.country.bcg}; color: {location.country.text}}
+#wlt-LocationSelect ul li.current {background-color: {location.item.selected}}
+
+#wlt-DealSubscribe {background-color: {top.block.bcg}; border-color: {top.block.border};}
+#wlt-DealSubscribe label {color: {top.block.text};}
+
+.topmenu li a {color: {top.menu.link};}
+.topmenu ul.horizontal li {background-image: url(./arrow.png);}
+
+#wlt-BaseLanguage {color: {language.text};}
+#wlt-BaseLanguage .langSelector {background: {language.bcg}; border-color: {language.border};}
+#wlt-BaseLanguage a {color: {language.link};}
+#wlt-BaseLanguage a:hover {background-color: {language.selected.bcg};}
+#wlt-BaseLanguage a[name="selector"] {color: {language.selected.text};}
+
+#mainmenu {border-top-color: {header.border}; background-color: {main.menu.bcg};}
+#mainmenu ul li a {color:{main.menu.link};}
+.roundedBox .borders {border-color: {rounded.box.border};}
+.roundedBox .tl, .roundedBox .tr, .roundedBox .bl, .roundedBox .br{background-image: url(./box.png);}
+
+#wlt-DealView .blueBox .header {background-color: {deal.info.box1.header.bcg};}
+#wlt-DealView .blueBox .content {background-color: {deal.info.box1.content.bcg}; border-color: {deal.info.box1.content.border};}
+#wlt-DealView .blueBox .price {color: {deal.info.box1.text};}
+#wlt-DealView .blueBox .buyButton {background-color: {buy.button.bcg}; color: {deal.info.box1.text}; border-color: {buy.button.border};}
+
+.greenBox {background-color: {deal.info.box2.bcg}; border-color: {deal.info.box2.border};}
+#wlt-DealStatus h4 {color: {deal.status.text}; border-color: {deal.status.border};}
+
+#wlt-UserMenu .welcome {color:{welcome.text};}
+#wlt-UserMenu .welcome .logoutLink a {color: {logout.link};}
+
+#page .ui-tabs .ui-tabs-panel {border-color: {rounded.box.border};}
+#page .ui-tabs .ui-tabs-nav li { background-color: {rounded.box.highlight}; border-color: {rounded.box.border};}
+#page #wlt-DealCouponsTabs .ui-tabs .ui-tabs-nav li a {color: {link}}
+#page #wlt-DealCouponsTabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected {background-color: {tabs.selected.bcg};}
+#page #wlt-DealCouponsTabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected a {color: {tabs.selected.link};}
+
+#page .grid-view table.items th {color: {items.header.text};background-color: {items.header.bcg};}
+#page .grid-view table.items th a{color: {items.header.link};}
+#page .grid-view table.items th a:hover{color: {items.header.text};}
+#page .grid-view table.items tr.even{background-color: {items.even.bcg};}
+#page .grid-view table.items tr.odd{background-color: {items.odd.bcg};}
+#page .grid-view table.items tr.selected{background-color: {items.selected.bcg};}
+#page .grid-view table.items tr:hover{background-color: {items.hover.bcg};}
+
+.classic-theme .recentDeal .content {border-color: {deal.info.box2.border};}
+.classic-theme .recentDeal .stats {border-color: {deal.info.box2.border}; background-color: {deal.info.box2.bcg};}
+.classic-theme .recentDeal .info {border-color: {deal.info.box1.content.border}; background-color: {deal.info.box1.content.bcg};}
+.classic-theme .recentDeal .info .price {background-color: {deal.info.box1.content.border};}
+
+#wlt-BaseFollowMenu {border-color: {footer.border};}
+#wlt-DealStats {border-color: {footer.border};}

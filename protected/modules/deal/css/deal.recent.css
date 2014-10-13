@@ -1,0 +1,13 @@
+.recentDeal {float: left; margin: 0 1em 1.5em 1em; width: 435px;}
+.recentDeal .name {height: 50px; overflow: hidden;}
+.recentDeal .prepend-top {margin-top: 1em}
+.recentDeal .data {width: 150px;}
+.recentDeal .date {font-weight: bold;}
+.recentDeal .content {border: 2px solid #ddd; padding: .5em}
+.recentDeal .image img {height: 170px;}
+.recentDeal .stats {border: 1px solid #ddd; padding: .5em; line-height: 1;}
+.recentDeal .stats .num {font-weight: bold; font-size: 250%}
+.recentDeal .info {border: 1px solid #ddd;}
+.recentDeal .info .price {background-color: #ddd;}
+.recentDeal .info .row {padding: .5em; margin: 0; font-size: 110%;}
+.recentDeal .info label {text-align: left; width: 50%;}

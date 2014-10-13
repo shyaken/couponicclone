@@ -1,0 +1,368 @@
+body {
+	background: #89ac60 url(../images/bcgEmail.png) 0 0 repeat-x;
+	font-size: 16px;
+}
+h1,h2,h3 {
+	font: bold 16px Helvetica;
+    text-shadow: #000 0 1px 1px;
+    color: #fff;
+    margin: 10px;
+    background-color: #4eacb7;
+    border: 1px solid #3a7f88;
+    -webkit-border-radius: 8px;
+    padding: 8px;
+    
+}
+h1 a {color: #fff;}
+form {
+    color: black;
+    background: #fff;
+    border: 1px solid #5a8e22;
+    font: bold 17px Helvetica;
+    margin: 10px;
+    -webkit-border-radius: 8px;
+}
+ul form {-webkit-border-radius: 0; margin: 10px;  border:none;}
+form .description
+{
+	padding: 10px;
+	border-bottom: 1px solid #5a8e22;
+}
+form .row {
+    border-bottom: 1px solid #5a8e22;
+    padding: 10px;
+    text-align: right;
+}
+form hr {
+	display: none;
+}
+form .buttons {
+	margin: 10px;
+	text-align: center;
+	border-bottom: 0;
+}
+form .hint {
+    padding: 10px 0 0 0;
+    text-align: center;
+    margin: 0;
+}
+form fieldset {margin: 0; text-align: center;}
+form fieldset label {width:auto;}
+form .field_rememberMe {text-align:center}
+form .buttons input, .classic-theme-mobile #wlt-DealView .buyButton, #wlt-PaymentCart #signInButton {
+margin: 0;
+font: bold 16px Helvetica;
+-webkit-border-image: url(../images/buttonMobile.png) 11;
+background: transparent;
+height: 62px; color: #fff; padding: 0; cursor: pointer;
+text-shadow: #000 0 1px 1px;
+width: 100%;
+border: 11px solid #ccc;
+}
+form .wlt-FacebookLoginButton {
+	text-align: center;
+	border-bottom: 1px solid #5a8e22;
+    padding: 10px;
+    float: none;
+}
+
+.classic-theme-mobile #wlt-DealView .buttons {
+	margin: 0;
+}
+
+.classic-theme-mobile form label {
+	text-align: left;
+	width: auto;
+	display: block;
+	float: none;
+}
+input[type=text], input[type=password], input.text, input.title, select {
+width: 100%;
+}
+
+.classic-theme-mobile .quantity .row {border: none;}
+
+.error,.notice,.errorSummary {margin: 10px;}
+
+a, a:active {color: #0091b5; text-decoration: underline;}
+.switchLink {font-size: 90%; font-weight: bold; text-align: center; margin-bottom: 2em;}
+.switchLink a{color: #fff; text-shadow: #666 0 1px 1px;}
+
+.errorSummary {
+	font-size: 80%;
+}
+.errorSummary ul {
+    color: inherit;
+    background: transparent;
+    border: 0;
+    font: inherit;
+    padding: 0;
+    margin: inherit;
+    -webkit-border-radius: 0;
+    list-style-type: none;
+}
+
+.errorSummary ul li {
+    color: inherit;
+    border-top: 0;
+    list-style-type: inherit;
+    padding: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+	margin: 10px;
+	padding: 10px;
+	background: #fff; -webkit-border-radius: 8px; border: 1px solid #5a8e22;
+}
+.classic-theme-mobile .worklet {margin: 0;}
+
+/* worklet specific */
+#wlt-DealView h1 a.slide {
+font: 11px Helvetica;
+-webkit-border-image: url(../images/mobile/redButton.png) 5;
+background: transparent;
+color: #fff; padding: 0;
+text-shadow: #666 0 1px 1px;
+width: auto;
+border: 5px solid #ccc;
+float: right;
+text-decoration: none;
+}
+#wlt-DealTimeLeft {font-size: 90%}
+.classic-theme-mobile #wlt-DealSlideshow-1 .worklet-content {width: 260px; margin: 0 auto;}
+.classic-theme-mobile .wlt-DealSlideshow .controls {margin: .5em 0 0 0; float: right;}
+.classic-theme-mobile .wlt-DealSlideshow .controls a {padding:0; font-size: 1px; width: 16px; height: 16px; display: block; float: left; background: url(../images/greyDot.png) 5px 5px no-repeat; color: transparent;}
+.classic-theme-mobile .wlt-DealSlideshow .controls a.active {border: none; background-image: url(../images/blueDot.png);}
+.classic-theme-mobile .wlt-DealSlideshow ul {border: 0; margin: 0; padding: 0; -webkit-border-radius: 0;}
+.classic-theme-mobile .wlt-DealSlideshow ul li {border: 0; margin: 0; padding: 0; -webkit-border-radius: 0;}
+
+#wlt-DealSide li.sideDeal img {width: 80px; margin-right: 10px; border: 1px solid #999; float: left; display: inline}
+#wlt-DealSide li.sideDeal {padding: 10px;}
+#wlt-DealSide li.sideDeal div {width: 170px;}
+#wlt-DealSide li.sideDeal a {color: #0091b5;text-decoration: underline;font-size: 90%;}
+
+#wlt-DealCoupons .summary {display: none}
+#wlt-DealCoupons li img {width: 80px; margin-right: 10px; border: 1px solid #999; float: left; display: inline}
+#wlt-DealCoupons li {padding: 10px;}
+#wlt-DealCoupons li div {width: 170px;}
+#wlt-DealCoupons li a {color: #0091b5;text-decoration: underline;font-size: 90%;}
+
+.classic-theme-mobile #wlt-BaseLanguage {
+position: static; width: auto; float: none;
+margin: 15px 10px 17px 10px;
+}
+.classic-theme-mobile #wlt-BaseLanguage .langSelector {
+position: static; width: 100%;
+color: black;
+background: #fff;
+border: 1px solid #5a8e22;
+font: bold 17px Helvetica;
+padding: 0;
+-webkit-border-radius: 8px;}
+.classic-theme-mobile #wlt-BaseLanguage .langList {display: none;}
+.classic-theme-mobile #wlt-BaseLanguage a {
+display:block;
+color: #666;
+border-top: 1px solid #5a8e22;
+list-style-type: none;
+padding: 10px 10px 10px 10px;
+}
+.classic-theme-mobile #wlt-BaseLanguage a[name="selector"] {border-top: none;}
+
+/* jquery ui slider */
+#wlt-DealStatus h3 {color: #000; text-shadow: none;margin: 0; background-color: transparent; border: none; -webkit-border-radius: 0; padding: 0; margin: 0 0 1em 0;}
+#wlt-DealStatus {width: 260px; margin: 0 auto}
+#wlt-DealStatus .ui-slider-handle {background: url(../images/slider/handler.png) 0 0 no-repeat;border: 0;top: -.8em;margin-left: -4px;width: 8px;height: 8px;}
+#wlt-DealStatus a.ui-corner-all {-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;}
+#wlt-DealStatus .ui-slider-horizontal {height: 9px; background: url(../images/slider/bcg.gif); border-color: #919191;}
+#wlt-DealStatus .ui-slider-range {background: url(../images/slider/range.gif); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+#wlt-DealStatus .ui-corner-all {-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+#wlt-DealStatus, #wlt-DealStatus h3 {font-weight: bold; font-size: 8pt;}
+#wlt-DealStatus h4 {color: #4a8b1c; border-color: #97c78c}
+
+.classic-theme-mobile #wlt-DealPrint {border: none; margin: 0; padding: 0; font-size: 100%;}
+.classic-theme-mobile #wlt-DealPrint h1, .classic-theme-mobile #wlt-DealPrint h3
+{
+	font: bold 16px Helvetica;
+    text-shadow: #000 0 1px 1px;
+    color: #fff;
+    margin: 10px;
+    background-color: #4eacb7;
+    border: 1px solid #3a7f88;
+    -webkit-border-radius: 8px;
+    padding: 8px;
+}
+.classic-theme-mobile #wlt-DealPrint h5 {
+	
+}
+
+.classic-theme-mobile #wlt-PaymentCart .q {
+	font-size: 65%;
+}
+
+/* @group Toolbar */
+.toolbar {
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    height: 45px;
+    background: url(../images/mobile/toolbar.png) #000000 repeat-x;
+    position: relative;
+}
+.black-translucent .toolbar {
+	margin-top: 20px;
+}
+.toolbar > h1 {
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    top: 10px;
+    line-height: 1em;
+    margin: 1px 0 0 -75px;
+    height: 40px;
+    font-size: 20px;
+    width: 150px;
+    font-weight: bold;
+    text-shadow: rgba(0,0,0,1) 0 -1px 1px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+body.landscape .toolbar > h1 {
+    margin-left: -125px;
+    width: 250px;
+}
+.button, .back, .cancel, .add {
+    position: absolute;
+    overflow: hidden;
+    top: 8px;
+    right: 10px;
+    margin: 0;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    white-space: nowrap;
+    background: none;
+    -webkit-border-image: url(../images/mobile/button.png) 0 5 0 5;
+}
+.blueButton {
+    -webkit-border-image: url(../images/mobile/blueButton.png) 0 5 0 5;
+    border-width: 0 5px;
+}
+.back {
+    left: 6px;
+    right: auto;
+    padding: 0;
+    max-width: 55px;
+    border-width: 0 8px 0 14px;
+    -webkit-border-image: url(../images/mobile/back_button.png) 0 8 0 14;
+}
+.back.active {
+    -webkit-border-image: url(../images/mobile/back_button_clicked.png) 0 8 0 14;
+    color: #aaa;
+}
+.leftButton, .cancel {
+    left: 6px;
+    right: auto;
+}
+.add {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.whiteButton,
+.grayButton {
+    display: block;
+    border-width: 0 12px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: inherit;
+    color: inherit;
+}
+.whiteButton {
+    -webkit-border-image: url(../images/mobile/whiteButton.png) 0 12 0 12;
+    text-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
+}
+.grayButton {
+    -webkit-border-image: url(../images/mobile/grayButton.png) 0 12 0 12;
+    color: #FFFFFF;
+}
+/* @end */
+
+/* @group Lists */
+
+h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul {
+    margin-top: 0;
+}
+
+ul {
+    color: black;
+    background: #fff;
+    border: 1px solid #5a8e22;
+    font: bold 17px Helvetica;
+    padding: 0;
+    margin: 15px 10px 17px 10px;
+    -webkit-border-radius: 8px;
+}
+
+ul li {
+    color: #666;
+    border-top: 1px solid #5a8e22;
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+}
+
+/* when you have a first LI item on any list */
+
+li:first-child, li:first-child a {
+    border-top: 0;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+
+li:last-child, li:last-child a {
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+/* universal arrows */
+
+ul li.arrow {
+    background-image: url(../images/mobile/chevron.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+	padding-right: 30px;
+}
+
+#plastic ul li.arrow, #metal ul li.arrow {
+    background-image: url(../images/chevron_dg.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#wlt-PaymentCart-grid {padding: 10px 0 0 0;}
+#wlt-PaymentCart-grid table.items {border: none; margin: 0; padding: 0;}
+#wlt-PaymentCart-grid table.items thead {display: none;}
+#wlt-PaymentCart-grid table.items tbody tr {background: none; color: #000; border-bottom: 1px solid #5a8e22;}
+#wlt-PaymentCart-grid table.items tbody tr td:nth-child(1) {text-align: left;}
+#wlt-PaymentCart-grid table.items tbody tr td:nth-child(3),#wlt-PaymentCart-grid table.items tbody tr td:nth-child(4) {display: none}
+#wlt-PaymentCart-grid table.items tbody tr.cartTotal td:nth-child(2),#wlt-PaymentCart-grid table.items tbody tr.credits td:nth-child(2) {display: none}
+#wlt-PaymentCart-grid table.items tbody tr.cartTotal td:nth-child(4),#wlt-PaymentCart-grid table.items tbody tr.credits td:nth-child(4) {display: block}
+#wlt-PaymentCart-grid table.items tbody tr td {width: auto; display: block; border: none; font-size: 100%; padding: 7px; text-align: center;}
+#wlt-PaymentCart-grid table.items tbody .quantityField {width: 50px;}
+#wlt-PaymentCart-grid table.items tbody .removeLink {font-size: 75%;}
+#wlt-PaymentCart .box {margin: 0; border: none;}

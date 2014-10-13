@@ -1,0 +1,159 @@
+body {background-color: #89ac60;}
+a, a:active {color: #0091b5;}
+a:hover, a:focus {color: #00aecb;}
+#header h2 {color: #9cb77d}
+#header h2 a {color: #fff;}
+#footer {background-color:#333; color:#999; border-top-color:#666;}
+#footer a{color: #ccc;}
+#footer a:hover {color: #fff;}
+#footer hr {background-color: #666;}
+
+body.splash #header {border-bottom: #9cb77d;}
+body.splash #header h2 {color: #fff;}
+
+#header, #header a {color: #fff;}
+
+#wlt-LocationSelect {background-color: #333333; border-color: #4d4d4d}
+#wlt-LocationSelect ul li {border-color: #4d4d4d;}
+#wlt-LocationSelect ul li a:hover {background-color: #666}
+#wlt-LocationSelect ul li.country {background-color: #404040; color: #ccc}
+#wlt-LocationSelect ul li.current {background-color: #666}
+
+#wlt-DealSubscribe {background-color: #333333; border-color: #4d4d4d}
+#wlt-DealSubscribe label {color: #fff;}
+
+.topmenu li a {color: #fff}
+
+#wlt-BaseLanguage {color: #ccc;}
+#wlt-BaseLanguage .langSelector {background: #000; border-color: #999;}
+#wlt-BaseLanguage a {color: #fff;}
+#wlt-BaseLanguage a:hover {background-color: #4d4d4d}
+#wlt-BaseLanguage a[name="selector"] {color: #ccc;}
+
+#mainmenu {border-top-color: #9cb77d; background-color: #4eacb7;}
+#mainmenu ul li a {color:#fff;}
+.roundedBox .borders {border-color: #5a8e22;}
+.shareMenu ul li {color:#666;}
+
+.blueBox .header {background-color: #00b8cc;}
+.blueBox .content {background-color: #d0ebf2; border-color: #8cb7c7;}
+#wlt-DealView .blueBox .price {color: #fff;}
+#wlt-DealView .blueBox .buyButton {background-color: #66bc29; color: #fff; border-color: #d9d9d9;}
+
+.greenBox {background-color: #ddf2d0; border-color: #97c78c;}
+#wlt-DealStatus h4 {color: #4a8b1c; border-color: #97c78c}
+
+#wlt-UserMenu .welcome {color:#000;}
+#wlt-UserMenu .welcome .logoutLink a {color: #fff;}
+
+/* tabs */
+#page .ui-tabs .ui-tabs-panel {border-color: #5a8e22;}
+#page .ui-tabs .ui-tabs-nav li { background-color: #ddf2d0; border-color: #5a8e22;}
+#page #wlt-DealCouponsTabs .ui-tabs .ui-tabs-nav li a {color: #0091b5}
+#page #wlt-DealCouponsTabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected {background-color: #e5e5e5;}
+#page #wlt-DealCouponsTabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected a {color: #000;}
+
+/* grid-view */
+#page .grid-view table.items th {color: #000;background-color: #ddf2d0;}
+#page .grid-view table.items th a{color: #666;}
+#page .grid-view table.items th a:hover{color: #000;}
+#page .grid-view table.items tr.even{background-color: #e9f2e4;}
+#page .grid-view table.items tr.odd{background-color: #f7f7f7;}
+#page .grid-view table.items tr.selected{background-color: #BCE774;}
+#page .grid-view table.items tr:hover{background-color: #ECFBD4;}
+
+/* recent deals */
+.classic-theme .recentDeal .content {border-color: #97c78c;}
+.classic-theme .recentDeal .stats {border-color: #97c78c; background-color: #ddf2d0;}
+.classic-theme .recentDeal .info {border-color: #8cb7c7; background-color: #d0ebf2;}
+.classic-theme .recentDeal .info .price {background-color: #8cb7c7;}
+
+#wlt-BaseFollowMenu {border-color: #666;}
+#wlt-DealStats {border-color: #666;}
+
+
+
+body {
+	background-color: #89ac60;
+	font-size: 16px;
+}
+h1,h2,h3 {
+    color: #fff;
+    background-color: #4eacb7;
+    border-color: 1px solid #3a7f88;    
+}
+h1 a {color: #fff;}
+form {
+    color: black;
+    background-color: #fff;
+    border-color: #5a8e22;
+}
+form .description
+{
+	border-bottom-color: #5a8e22;
+}
+form .row {
+    border-bottom-color: #5a8e22;
+}
+form #wlt-FacebookLoginButton {
+	border-bottom-color: #5a8e22;
+}
+a, a:active {color: #0091b5;}
+.switchLink a{color: #fff;}
+
+.box {
+	background-color: #fff; border-color: #5a8e22;
+}
+
+#wlt-DealView h1 a.slide {
+color: #fff; border-color: #ccc;
+}
+
+#wlt-DealSide li.sideDeal img {border-color:#999;}
+#wlt-DealSide li.sideDeal a {color: #0091b5;}
+
+#wlt-DealCoupons li a {color: #0091b5;}
+
+.classic-theme-mobile #wlt-BaseLanguage .langSelector {
+color: black;
+background-color: #fff;
+border-color: #5a8e22;
+}
+.classic-theme-mobile #wlt-BaseLanguage a {
+color: #666;
+border-top-color: #5a8e22;
+}
+
+/* jquery ui slider */
+#wlt-DealStatus h3 {color: #000;}
+#wlt-DealStatus h4 {color: #4a8b1c; border-color: #97c78c}
+
+.classic-theme-mobile #wlt-DealPrint h1, .classic-theme-mobile #wlt-DealPrint h3
+{
+    color: #fff;
+    background-color: #4eacb7;
+    border-color: #3a7f88;
+}
+
+/* @group Toolbar */
+.toolbar {
+    border-bottom: #000;
+    background-color: #000000;
+}
+.toolbar > h1 {
+    color: #fff;
+}
+.button, .back, .cancel, .add {
+    color: #fff;
+}
+
+ul {
+    color: black;
+    background-color: #fff;
+    border-color: #5a8e22;
+}
+
+ul li {
+    color: #666;
+    border-top-color: #5a8e22;
+}

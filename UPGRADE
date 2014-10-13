@@ -1,0 +1,32 @@
+UniProgy Couponic Upgrade Instructions
+======================================
+
+Standard Upgrade Instructions
+-----------------------------
+Use these if there are no special instructions for your version below
+---------------------------------------------------------------------
+1. Upload changed files.
+
+2. Launch installer: http://yourdomain.com/install
+
+3. Once you log in you will be redirected to Installer Home.
+
+4. Click 'Upgrade' button.
+
+
+Upgrading from 1.0.x
+--------------------
+1. Create new directory:
+/physical-path-to-couponic-script-home-directory/protected/config/public
+and move following files to it:
+/protected/data/auth.php
+/protected/config/instance.php
+/protected/config/modules.php
+
+2. Upload all files from current release.
+
+3. Launch installer: http://yourdomain.com/install
+
+4. Once you log in you will be redirected to Installer Home.
+
+5. Click 'Upgrade' button.

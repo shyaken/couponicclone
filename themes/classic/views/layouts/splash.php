@@ -1,0 +1,1 @@
+<?php $this->renderPartial('/layouts/main',array('content' => $content, 'wrapper' => 'splash')); ?>

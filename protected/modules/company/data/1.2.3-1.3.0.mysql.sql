@@ -1,0 +1,1 @@
+ALTER TABLE `{{Company}}` ADD `commission` DOUBLE UNSIGNED;

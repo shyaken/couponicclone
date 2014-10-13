@@ -1,0 +1,1 @@
+ALTER TABLE `{{User}}` ADD `language` VARCHAR( 10 ) NULL;

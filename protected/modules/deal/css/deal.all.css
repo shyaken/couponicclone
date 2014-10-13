@@ -1,0 +1,6 @@
+.allDeal {
+	float: left; margin: 0 1em 1.5em 1em; width: 415px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+.allDeal .image img {width: 415px;}

@@ -1,0 +1,36 @@
+UniProgy Couponic Script
+========================
+
+Thank you for choosing UniProgy Couponic - group buying script at it's best!
+
+
+INSTALLATION
+------------
+
+1. Rename protected/config/initial to protected/config/public
+
+2. Upload all files and directories from this release to Web accessable location,
+such as your site home directory (ex.: /home/user/public_html)
+
+3. Load http://yourdomain.com/path_to_script/install in your browser.
+http://youdomain.com/path_to_script should be replaced with an actual URL.
+
+ex.:
+	http://www.mysite.com/install
+	http://www.mysite.com/couponic/install
+	http://my.site.com
+	...
+	
+4. Default administrator login:
+Username: admin
+Password: password
+	
+
+REQUIREMENTS
+------------
+
+http://uniprogy.com/couponic/requirements
+
+
+UniProgy Support Team
+http://uniprogy.com

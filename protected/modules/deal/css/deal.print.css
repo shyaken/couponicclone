@@ -1,0 +1,10 @@
+#wlt-DealPrint {border: 2px solid #000; margin: 1em; padding: 1em; font-size: 120%;}
+#wlt-DealPrint table {width: 100%;}
+#wlt-DealPrint h1 {font-size: 160%; font-weight: bold; margin:0;}
+#wlt-DealPrint h3 {
+	font-size: 140%; font-weight: bold;
+	margin: .5em 0 .5em 0;
+	padding: .5em 0 0 0;
+	border-top: 2px solid #ccc;
+}
+#wlt-DealPrint h5 {font-size: 100%; margin :0;}

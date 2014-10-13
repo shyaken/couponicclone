@@ -1,0 +1,7 @@
+.topmenu ul.horizontal li {float: right;}
+#mainmenu ul li {font-size:90%;}
+#mainmenu ul li a {padding: 0 .7em}
+#wlt-DealView .blueBox .buyButton {line-height: 38px; padding: 0 0 0 8px; width: 111px; font-size: 130%}
+#space {height: 178px;}
+#footer {height: 148px;}
+.classic-theme #wlt-DealSide .sideDeal a.viewLink {font-size: 70%;background: #9cb77d; width: auto; padding: 0 2px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}

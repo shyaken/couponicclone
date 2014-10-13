@@ -1,0 +1,5 @@
+#wlt-DealView .price {font-size: 200%;}
+#wlt-DealView .buyButton {width: 100px; height: 60px; font-size: 200%; font-weight: bold;}
+#wlt-DealView .unavailable {font-size: 120%}
+#wlt-DealView hr {background: #999; margin: 1em 0 1em 0;}
+#wlt-DealView .span-5 ul {margin:0; padding:0 0 0 1.2em;}

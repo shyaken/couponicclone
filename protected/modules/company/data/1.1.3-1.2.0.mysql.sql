@@ -1,0 +1,1 @@
+ALTER TABLE `{{Company}}` ADD `phone` VARCHAR( 250 ) NULL AFTER `address`;

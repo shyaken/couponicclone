@@ -1,0 +1,5 @@
+/* language select */
+#wlt-BaseLanguage {position: relative; width: 160px; float: right;}
+#wlt-BaseLanguage .langSelector {position: absolute; width: 160px;}
+#wlt-BaseLanguage .langList {display: none;}
+#wlt-BaseLanguage a {display:block;}

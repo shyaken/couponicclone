@@ -1,0 +1,9 @@
+#wlt-LocationSelect {display:none}
+#wlt-LocationSelect ul.country, #wlt-LocationSelect ul.country .state, #wlt-LocationSelect ul.country .city {display: none}
+#wlt-LocationSelect ul {list-style-type: none; margin:0; padding:0;}
+#wlt-LocationSelect li {padding:0; margin:0; float: left;}
+#wlt-LocationSelect .currentCountry, #wlt-LocationSelect a {padding: .5em; margin:0;}
+#wlt-LocationSelect .search a {float: left;}
+#wlt-LocationSelect li.state {float: none}
+#wlt-LocationSelect li.country {float: none; width: 100%; clear: both;}
+#wlt-LocationSelect ul:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}

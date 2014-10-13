@@ -1,0 +1,4 @@
+#wlt-DealMediaList .mediaItem {text-align: center; margin-bottom: 1em; width: 225px; height:300px;}
+#wlt-DealMediaList .mediaItem a {display: block;}
+#wlt-DealMediaList .mediaItem img {max-width: 225px; max-height: 170px;}
+#wlt-DealMediaList .mediaItem .description {height: 35px; overflow: hidden; margin: 0; padding: 0; color: #999;}

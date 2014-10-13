@@ -1,0 +1,1 @@
+ALTER TABLE `{{PaymentOrderItem}}` CHANGE `quantity` `quantity` DOUBLE UNSIGNED;

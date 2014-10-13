@@ -1,0 +1,1 @@
+ALTER TABLE `{{Location}}` ADD `cityASCII` varchar(250);

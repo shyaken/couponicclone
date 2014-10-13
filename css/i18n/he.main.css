@@ -1,0 +1,87 @@
+@import url(../blueprint/plugins/rtl/screen.css);
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/* typography */
+.loading {background:url(loading.gif) no-repeat left top;}
+
+/* forms */
+input[type=text], input[type=password], input.text, input.title, select {margin:0 0 0 .3em;}
+form .editableImage {float: right;}
+form .editableImage .controls {left:3px; right: auto;}
+label {
+	text-align: left;
+	float: right;
+	margin: 0 0 0 .5em;
+}
+fieldset {
+	margin: 0 30% 0 0;
+	padding: 0 0.5em 0 0;
+}
+fieldset input {
+	float: right;
+}
+fieldset label {
+	text-align: right;
+	margin: 0 1.6em .5em 0;
+}
+form .hint {
+	margin: .5em 30% 0 0;
+	padding-left: 0;
+	padding-right: 0.5em;
+}
+form .hintInlineBefore .hint
+{
+	margin: 0 -0.5em 0 0.5em;
+	float: right;
+}
+form .hintInlineAfter .hint
+{
+	margin: 0 -0.5em 0 0;
+}
+form .buttons {
+	margin: 0 30% 0.5em 0;
+	padding-left: 0;
+	padding-right: 0.5em;
+}
+fieldset.inline label {
+	float: right;
+	margin: 0 0.5em 0.5em 0.5em;
+}
+
+form .ui-tabs .ui-tabs-nav li.ui-tabs-selected,
+form .ui-tabs .ui-tabs-nav li.ui-state-default {float: right; }
+form .ui-tabs .ui-tabs-nav li a { float: right; }
+form .ui-tabs .ui-tabs-nav li {margin: 0 0 0 1px;}
+
+/* footer menu */
+#footermenu ul li {margin: 0 0 0 2em;}
+
+/* misc */
+.floatRight {float: left}
+.txt-left {
+	text-align: right;
+}
+.txt-right {
+	text-align: left;
+}
+ul.horizontal li {
+	float: right;
+	padding: 0;
+	margin: 0 0 0 5px;
+}
+
+/* worklets */
+.worklet {
+	margin: 0 0 1em 0;
+}
+.worklet .worklet {
+	margin: 1em 0 1em 0;
+}
+.worklet-title {
+}
+.worklet-content {
+}

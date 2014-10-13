@@ -1,0 +1,367 @@
+UniProgy Couponic Change Log
+============================
+
+Version 1.5.4 April 25, 2012
+----------------------------
+- Bug: mobile interface doesn't inherit color changes, button doesn't colorize at all.
+- Bug: wrong amount for companies payout.
+- Bug: companies payout doesn't work.
+- Bug: do not show CMS block on coupon print page.
+- Bug: orders on admin -> deals page are messed up.
+- Bug: when deal requires users to select redeem location first one gets selected by default, but it doesn't save if they do not change it to another one.
+- Bug: when user tries to purchase more coupons then allowed it should show an error.
+- Bug: no ability to add a link or image in CKEditor in newsletter create/edit forms.
+- Bug: "undefined" text added to My Price in a cart.
+- Bug: company "viewer" can still see "create deal" button.
+- Bug: several misspellings fixed.
+- Chg: load affiliate codes even when order is authorized manually by admin.
+- Chg: show thumbnails in "side deals" - not full size images.
+- Chg: mobile interface's shopping cart view updates.
+- Chg: script wouldn't allow to delete price or deals which already have orders associated with them.
+- Chg: it is now possible to create a company with the same email as an existing user (user account will be simply transferred to company role).
+- Enh: add language selector to splash page.
+- Enh: CMS blocks now recognize GET parameters for "show/hide on page" settings.
+- Enh: ability to use PHP in CMS blocks and pages.
+
+Version 1.5.3 January 24, 2012
+-------------------------------
+- Bug: error when trying to delete deal category.
+- Bug: when admin removes a deal script doesn't remove associated entries from DealPrice DB table.
+- Bug: when there are more then 10 draft deals (so there are more pages to see) and admin tries to view 2nd page - there's an error.
+- Bug: missing fields description in deal status change errors.
+- Bug: general update to payment modules: they should render a form and a button and auto-click it (it used to auto-submit forms - not compatible with mobile interface).
+- Bug: newsletters have email duplicated in "From" field - should be site name.
+
+Version 1.5.2 December 14, 2011
+-------------------------------
+- Enh: when account is verified and user tries to click verification link again it should say "account already verified" message instead of an error.
+- Enh: countdown timer now shows leading zeroes for hours, minutes and seconds.
+- Bug: deal categories disappear when no translation has been provided for default language.
+- Bug: deals disappear from admin management when name translation wasn't provided for default language.
+- Bug: coupons status filter doesn't work in admin.
+- Bug: "undefined" errors when trying to subscribe without entering email using Chrome.
+- Bug: mobile version doesn't respond to button/link clicks.
+- Bug: error when you try to delete email from subscription list.
+- Bug: cron job broken.
+- Bug: error when trying to re-post a deal.
+
+Version 1.5.1 November 29, 2011
+-------------------------------
+- Bug: deal cannot be created.
+- Bug: if deal name has not been provided in default language admin can't see it anymore to edit.
+
+Version 1.5.0 November 9, 2011
+------------------------------
+- Enh: language selection added to admin console.
+- Enh: custom profile fields: admin can add fields to profile, which users will be able to submit during registration or account editing.
+- Enh: deal categories can now be translated.
+- Enh: admin can choose whether to allow or disallow users to pay for a deal using their on-site credits.
+- Enh: admin can require users to select redeem location for a deal. Coupons can be filtered by redeem location by admin or company admin.
+- Enh: in case when the deal offers a discount itself - not a service or product - admin should be able to submit different coupon price. 
+- Enh: deal stats adjustment - admin can manipulate deal sales stats.
+- Enh: when the deal is created company address is automatically added to redeem locations.
+- Enh: in newsletter create form (admin -> subscriptions) list selection is much more comfortable now.
+- Enh: multiple pricing options within one deal.
+- Enh: admin can choose which page should be used as a site homepage - "today's deal" or "all deals".
+- Enh: deal related subscription list is removed after the deal ends (admin can enable/disable such behavior and configure the number of days to wait before delete).
+- Enh: "placed" orders are deleted after configurable by admin number of days.
+- Enh: admin can add affiliate codes which will be automatically added to the "thank you" page after successful payment.
+- Enh: when the deal fails and script refunds all orders it also sends emails to users informing them about it.
+- Enh: if the deal has failed admin can use same deal URL for a new deal (used to be locked with that failed deal).
+- Enh: google+ share button added.
+- Enh: admin can specify convert currency and rate. All prices on the site remain in the main site currency but right before the payment order amount gets converted into that convert currency. This is useful if some payment gateway (such as Paypal) doesn't work with a particular currency.
+- Enh: admin can add descriptions to deal images.
+- Enh: admin can switch the site to "credtis only" mode - users have to load funds into their account and use those funds to actually purchase coupons.
+- Enh: admin can choose the way company payouts are calculated: based on all coupons sold or only redeemed ones.
+- Enh: API module - it is specifically designed to work with mobile apps.
+- Enh: Yii Framework upgraded to the latest version.
+- Enh: Bank Wire module not only shows payment info online but also sends it by email.
+- Enh: email import tool.
+- Chg: all payment methods except Paypal, Credit Card and Bank Wire are now removed from the base script (available for separate download from the modules store).
+
+Version 1.4.4 October 28, 2011
+------------------------------
+- Bug: when Couponic tries to capture a previously authorized payment via Paypald and Paypal returns 10601 it should void that order and do not try anymore, because this error means that too much time has passed since the payment has been authorized and it's too late to capture it already.
+- Bug: when cities are disabled (so the site uses categories only) "Select City" button should be gone from mobile version.
+- Bug: user language gets stored only during registration, should update for logged in users as well.
+- Bug: when viewing shopping cart page and changing language - items do not translate.
+- Bug: if there are too much of coupons admin->deals->manage coupons->export to .CSV may cause "out of memory" error.
+- Bug: IE7 and advanced city selector incompatibility.
+- Bug: when setting up a city based background it shouldn't appear on coupon print view.
+- Bug: not possible to change cities names in admin -> setup -> manage locations.
+- Bug: in admin->deals changing filter to "Tipped" doesn't return anything.
+- Bug: All Deals various IE incompatibility issues.
+- Bug: Couponic should return 404 Not Found is someone tries to access URL which doesn't exist.
+- Bug: setting deal price to 0 causes admin to show discount as 0% (should be 100%).
+- Bug: in admin when deals have similar IDs (for ex. 1 and 11) it shows redeem locations of deal #1 in management screen of deal #11.
+
+Version 1.4.3 July 6, 2011
+--------------------------
+- Bug: various newsletter create/send bugs.
+- Bug: when the site is set to allow access to home and registration pages only and user registers - there's no confirmation message shown.
+- Bug: when mailchimp module enabled - subscription cron should mark newsletters as completed, so when mailchimp is disabled cron doesn't try to send them again.
+- Bug: authorize.net module doesn't pass zip code and credit card CVV code.
+- Bug: wrong URL in admin -> setup for ipinfodb website.
+
+Version 1.4.2 June 21, 2011
+---------------------------
+- Bug: when switching from "hide categories" to other 2 options in admin -> setup -> deal module all subscribers must be assigned to all categories - otherwise script always thinks there are not matching subscribers.
+- Bug: subscribers search by email doesn't work.
+- Bug: when categories are disables they shouldn't appear in filter on all deals page.
+- Bug: city manager should be able to preview a deal (like super admin and company admin).
+
+Version 1.4.1 June 15, 2011
+---------------------------
+- Bug: ip-to-location bugs.
+- Bug: impossible to delete a subscriber.
+- Bug: newsletters do not send out.
+- Bug: city custom background doesn't show up.
+- Bug: when theme is created using admin -> tools it shows as "Unnamed Theme"
+
+Version 1.4.0 May 26, 2011
+--------------------------
+- Enh: improved "select city" selector: search by first letter, switch between countries.
+- Enh: introducing "city manager" role: sub-administrator that can manage deals/companies only within a fixed list of cities.
+- Enh: content management system: add content blocks to sidebar or main area from admin.
+- Enh: redemption code added to coupons.
+- Enh: custom background for the deal view page: city and deal levels.
+- Enh: themes manager: switch themes and modify their settings (colors) from admin.
+- Enh: introducing deal categories.
+- Enh: one-page checkout: adding signup/signin forms into the payment page.
+- Enh: ability to re-post a deal.
+- Enh: transaction history in users on-site credits management.
+- Enh: ability to view all active deals and upcoming deals - filter by city and categories.
+- Enh: "Become a partner" page.
+- Enh: "Suggest business" page.
+- Enh: side deals are being sent within the main deal newsletter.
+- Chg: subscription prompt should have "Today's Deal" option.
+- Chg: when user wants to pay using credits only "select payment method" field disappears.
+- Bug: authorize.net integration should send address, city, state, etc. to the processor when used as a gateway for credit card module.
+- Bug: there's no way to cause the script to show 404 not found page. Every URL (even that doesn't exist) goes to default location deal.
+- Bug: admin shouldn't be able to assign company role in admin -> users.
+- Bug: RSS feed ignore /city-name ending - always shows the feed for default city.
+- Bug: pagination doesn't work on my stuff -> my couponc -> all.
+- Bug: when coupons are bought as a gift they do not show up in My Coupons.
+
+Version 1.3.4 April 18, 2011
+----------------------------
+- Bug: paypal IPN class has "eregi" which has been deprecated in PHP5.
+- Bug: newsletters have "no-reply" email set as their "from" address.
+- Bug: "contact us" emails have "no-replace" email set as their "from" address.
+- Bug: unavailable, expired, sold out deals should show appropriate status, currently they say "deal is on" all the time.
+- Bug: company admin can see edit button for a deal only if he/she filters deals by status "Draft".
+- Bug: mobile interface in "my stuff" shows all coupons. This should show available coupons only.
+- Bug: coupon ID is truncated in mobile interface.
+- Bug: my coupons - purchase date always shows the date of the first order placed for the deal, even if it doesn't belong to the current user.
+- Bug: company and deal redeem address forms should be always "un-fixed" (allow to choose any country, state, city).
+- Bug: no ability to add flash movie to the deal description field.
+- Bug: if the form submission results in a redirect it shouldn't become re-enabled when AJAX response is received.
+- Bug: no ability to buy coupons using credits only.
+- Bug: admin -> deals -> payments doesn't show all payments.
+- Bug: wrong order dates in admin -> orders.
+- Bug: when user is browsing City1 deals and opens another deal (which is published in City1 and City2) script changes user location to City2. Should stay in City1.
+- Bug: admin and company admin don't have an ability to preview deal in a draft status.
+- Chg: anythingslider plugin updated to the latest version.
+
+Version 1.3.3 March 4, 2011
+---------------------------
+- Bug: when users subscribes on a splash page to some particular city newsletters they should be redirected to the deal of that city.
+- Bug: PHP error in RSS feed.
+- Bug: script sill allows to order coupons for a deal that is no longer active, especially when Gift module is also installed.
+- Bug: when user completes the payment shopping cart should be emptied.
+- Bug: impossible to publish deal newsletter or create new one in admin -> subscriptions.
+- Bug: PHP error when user requests a verification link to be resent.
+- Bug: time zone doesn't save when admin creates or edits company account.
+- Bug: Google Maps worklet should respect https (if it is enabled on a page where the widget is supposed to be added).
+- Bug: dropdown filters do not work in IE.
+- Bug: when location module is set to show locations that have deals it shows all cities instead.
+- Bug: when the price is in millions the shopping cart live total update breaks.
+- Bug: Google Maps widget is too zoomed in when 2 redeem locations are too close to each other.
+- Bug: newsletters do not contain unsubscribe link.
+- Bug: recent deals page shows all deals.
+- Chg: several changes in installer/upgrader - should verify file permissions even when upgrading; warn user when upgrader is about to re-install any module.
+- Chg: address format changed to international standard.
+- Enh: a free deal can be created now.
+- Enh: deal view page now has a special "image_src" link tag - used by Facebook to identify the page thumbnail when sharing it.
+
+Version 1.3.2 February 22, 2011
+-------------------------------
+- Bug: you can buy coupons even for the deals which are already over.
+- Bug: cron doesn't work.
+- Bug: when editing a deal barcode number and format doesn't get stored.
+- Bug: google maps shouldn't zoom that much when there's only one redeem location.
+- Bug: google maps do not load in IE8 if you refresh the page.
+- Enh: subscription prompt setting now have 3rd option: disable completely.
+
+Version 1.3.1 February 18, 2011
+-------------------------------
+- Bug: PHP error on shopping cart page when using any language except English.
+- Bug: side deals images appear in their original dimensions - should be resized.
+- Bug: upgrading from 1.2 to 1.3 - old coupon numbers should still be valid.
+- Bug: all locations from all deals are deleted when adding a new location to some certain deal.
+- Bug: shopping cart total should be re-calculated each time item gets removed.
+
+Version 1.3.0 February 15, 2011
+-------------------------------
+- Bug: "My Staff" page appears too close to the navigation bar, unlike the rest of the site (classic theme).
+- Bug: current active deals stats in admin isn't accurate
+- Bug: even though deal name is a required field script allows to create a deal with empty name.
+- Bug: export to CSV function exports only 10 first entries.
+- Bug: filters change doesn't work in IE across the site.
+- Bug: multiple PagSeguro module fixes.
+- Bug: Paypal module needs to escape deal name when passing data to Paypal.
+- Bug: script processes (charges) orders even for deals that have failed (never got tipped).
+- Bug: shopping cart allows usage of decimal point in coupons quantity field.
+- Bug: shopping cart should respect national number formatting (such as thousands separator or decimal point).
+- Bug: user first and last name should be properly escaped, otherwise it allows usage of javascript and opens a hole for XSS attacks.
+- Bug: when admin allows unverified users to access the site they should get auto-verified and approved if they purcase something.
+- Bug: when company is deleted associated deals do not get deleted automatically and can't be edited or accessed in any way.
+- Bug: when user pays the full amount of the order using on-site credits and "credit card" is selected as payment method - it still requires them to fill in CC fields.
+- Bug: when users fill in credit card info they should be able to choose any country, state and city - should not be related with admin settings for Location module.
+- Bug: when cron runs automatically it needs to log out admin, or it's a security hole
+- Chg: admin -> setup -> manage modules now only shows modules that are safe to disable/enable.
+- Chg: company website and payment account fields are not longer mandatory.
+- Chg: users can still print used coupons (in case they've marked them as used by mistake).
+- Chg: wording "total dollars saved" changes to "total money saved" - improved i18n compatibility.
+- Enh: admin can disable usage of "uploadify" fields site-wide.
+- Enh: bank wire payment gateway added.
+- Enh: coupons now have truly unique IDs.
+- Enh: deal creator has an ability to provide longitude and latitude params for every redeem location in case google maps can't find necessary point by address only.
+- Enh: deals can be assigned to multiple locations (including "All Locations").
+- Enh: during the first visit users are prompted to subscribe. Admin can choose whether users can access the rest of the site without subscribing or not.
+- Enh: individual commissions can be set on a company and deal level.
+- Enh: language selector added to mobile view
+- Enh: multiple redeem locations can be added to a deal.
+- Enh: users can order multiple deals in one go - shopping cart remembers their choice.
+- Enh: vendors/merchants can create deals which will appear on the site after admin approval.
+- Enh: when user marks coupon as used - it's only for categorizing purposes; coupon can be truly marked as used only by vendor or admin.
+- Enh: deal creator has an ability to choose which payment methods to enable for the deal
+- Enh: side deals now appear with images
+
+Version 1.2.3 December 23, 2010
+-------------------------------
+- Bug: error during re-install because of Subscription module.
+- Bug: 'zii' messages not translated.
+- Bug: Paypal module keeps sending requests to sandbox, even if it has been disabled from admin.
+- Bug: JS errors on admin -> subscription -> newsletters -> create newsletter.
+- Bug: when creating user from admin it doesn't subscribe them to apropriate lists.
+- Bug: newsletters do not contain "unsubscribe" link.
+
+Version 1.2.2 December 21, 2010
+-------------------------------
+- Bug: multiple emails are being sent for any newsletter campaign to the same recipient
+- Enh: Japanese translation.
+
+Version 1.2.1 December 20, 2010
+-------------------------------
+- Bug: when user chooses any payment method but not credit card it still requires them to fill in credit card info
+- Bug: during installation/upgrade all payment modules except Paypal should be disabled by default
+- Bug: IP-to-location bugs (doesn't store city, doesn't store correct state code - saves full name instead)
+- Bug: recent deals boxes should have fixed width
+- Bug: error when you try to pay to the company (as admin)
+- Bug: error on coupon print view
+- Bug: when user changes coupons quantity and the price of the coupon has a decimal point - there's an error
+- Enh: Hebrew, Greek, Czech and Spanish translations added. Portuguese (Brazil) has been updated.
+
+Version 1.2.0 December 16, 2010
+-------------------------------
+- Bug: company admin should have access to deal media editing even with basic access rights.
+- Bug: coupons should become available for printing ONLY when the order finally gets charged. Not when the deal becomes tipped.
+- Bug: deal image missing in the newsletter.
+- Bug: deal URL must be unique.
+- Bug: few minor bugs in admin -> tools -> language.
+- Bug: few minor bugs in admin -> tools -> theme creator.
+- Bug: full user name should appear on the coupon print view.
+- Bug: Google Maps widget should show deal location, not company location.
+- Bug: IE7, IE8 tabs bug - instead of loading proper tab contents it loads the entire website homepage.
+- Bug: orders can't be filtered by date or amount.
+- Bug: side deals show closed deals.
+- Bug: switching the site to non-public access causes infinit loop when accessing any page.
+- Bug: there shouldn't be a state (currently showsn as "0") in addresses or Google Maps widget for countries that do not have states.
+- Bug: uncharged orders are added to the company payouts.
+- Bug: unsubscribe confirmation message disappears too fast - shouldn't disappear at all.
+- Bug: users should be able to input only positive numbers into the quantity field during purchase.
+- Bug: when uploading portrait image in admin -> deals -> edit -> deal media some control links disappear.
+- Bug: when user signs up and email verification is turned off (or access for unverified users is allowed) script should automatically sign in those users.
+- Bug: when you click on "Mark as used" link in "My Coupons" it doesn't work.
+- Bug: zeroes shouldn't be allowed for deal price or value during deal creation or editing.
+- Chg: Cron doesn't use admin email/password for authentification anymore. It does that using a secret word which admin can setup.
+- Enh: admin and company owner can export coupons list as .CSV
+- Enh: admin can ban user by IP.
+- Enh: admin can enable/disable modules from admin->setup->manage modules.
+- Enh: admin can manually add/deduct users' on-site credit.
+- Enh: admin can setup default time zone, which will be used across the site.
+- Enh: all numbers get automatically formatted (thousand separators).
+- Enh: Custom module added - allows adding simple customizations quickly.
+- Enh: deal fine print, highlights, description and other text fields can now be filled in separately for every supported language.
+- Enh: full adaption for right-to-left support.
+- Enh: Google Maps widget added to the coupon print view.
+- Enh: IP-to-location feature via IPInfoDB.com
+- Enh: mobile version of the theme.
+- Enh: phone number field added to the company create/edit form.
+- Enh: Subscription module - allows to manage subscribers, create campaigns, etc.
+- Enh: the option to remove "powered by" notice added to admin -> setup.
+- Enh: when admin submits HTML content target="_blank" should be allowed.
+- Enh: when Location module is set to use "fixed" locations script should use them across the site and in all forms.
+
+Version 1.1.3 November 9, 2010
+------------------------------
+- Enh: PagSeguro and Authorize.NET payment processing
+- Enh: Fixed cities list support (as an option)
+- Enh: suggest visitor to subscribe to a newsletter if no deals found for their city
+- Enh: unique barcodes for every deal
+- Enh: deal media - multiple images and videos; appear as slideshow in user end
+- Enh: side deals - ability to run multiple deals for the same city at the same time
+- Enh: Google Maps integrated
+- Bug: facebook button doesn't work in IE
+- Bug: cities with national characters in their name do not work
+- Bug: various cron job issues
+- Bug: there's an error when you try to delete a deal
+- Bug: when you delete a user some related information is not removed from the DB
+- Bug: various newsletter issues
+
+Version 1.1.2 October 26, 2010
+------------------------------
+- Bug: when supported country is changed in admin the whole Location module form should reload, because the Default Location form doesn't show the right state and city fields.
+- Bug: currency symbol doesn't update on the homepage or deal emails (classic theme).
+- Bug: deal notification email doesn't contain unsibscribe link.
+- Bug: weird coupons per user limit behavior - the script calculate total user coupons instead of coupons which user has bought for the current deal only.
+- Chg: 'Sign Out' link moved to the right in the main nav bar so there's more spaces for other menu items.
+- Chg: favicon.ico added.
+- Chg: company address format fixed.
+- Enh: every new user is automatically subscribed to a newsletter.
+- Enh: now admin can setup email settings in admin -> setup.
+- Enh: when user gets redirected to Paypal they can see the contents of their cart, including correct quantity number and price for each item.
+- Enh: PayPal ExpressCheckout integrated.
+- Enh: major Payment module upgrade. We've moved everything related with orders processing to Payment module (out of Deal module) so any future modules can also use it to process specific orders.
+
+Version 1.1.1 October 12, 2010
+------------------------------
+- Bug: currency symbol when changed in admin doesn't change on the homepage
+- Bug: when visitor chooses city which is later removed from DB (re-installation) a PHP error occurs
+- Bug: administrator should always see users' full names when managing coupons, orders, etc.
+- Chg: installer adds correct domain ending to system emails during installation
+- Enh: recent deals feature added
+- Enh: "Follow Us" feature with RSS added
+- Enh: Coupons Bought/Dollars Saved feature added
+                   
+Version 1.1.0 October 1, 2010
+-----------------------------
+- Chg: adaptaion for UniProgy Framework 1.1.0 (adding name, version, version history, installers and upgraders to all modules).
+- Chg: admin language tool now also parses for Yii::t translator method.
+- Chg: "remember me" functionality enabled for user login.
+                   
+Version 1.0.2 September 16, 2010
+--------------------------------
+- Bug: time zone offset calculation. Affected: MDealForm, MDealListModel, WDealAdminList, WDealCoupons, WDealTimeLeft.
+- Bug: when you create a deal without an image there used to be an error.
+
+Version 1.0.1 September 9, 2010
+-------------------------------
+- Bug: BLocationForm and jquery.uniprogy.loc.js: didn't render the form if non-existent location was currently selected.
+- Bug: WUserResend, WUserReset, WUserReset - mail send method expects to receive recipient info as a model rather then just an email address string.
+- Chg: UniProgy Framework updated up to 1.0.1 version.
+
+Version 1.0.0 August 9, 2010
+----------------------------
+- Initial Release

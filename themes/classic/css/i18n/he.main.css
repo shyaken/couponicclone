@@ -1,0 +1,59 @@
+/* classic theme */
+#header h2 {margin: .5em 2em 0 0;}
+.buttons input {margin: 0 -4px 0 0;}
+
+/* location select */
+#wlt-LocationSelect ul li {float: right; border-width: 1px 0 0 1px; text-align: right;}
+#wlt-LocationSelect ul li p, #wlt-LocationSelect ul li a {text-align: right; float: right;}
+#wlt-LocationSelect ul li.last {border-left-width: 0;}
+
+/* deal subscribe */
+#wlt-DealSubscribe {background-color: #333333; border: 1px dashed #4d4d4d}
+#wlt-DealSubscribe label {color: #fff;}
+#wlt-DealSubscribe .buttons input {margin: 0;}
+
+/* top menu */
+.topmenu {float: left; max-width: 50%;}
+.topmenu ul.horizontal li {background: url(../../images/arrow.gif) left 7px no-repeat; padding:0 0 0 14px; margin: 0 2em 0 0}
+
+/* language select */
+.classic-theme #wlt-BaseLanguage {float: left;}
+#wlt-BaseLanguage a[name="selector"] {padding: 0 3px 0 12px; background: url(../../images/arrowSmall.gif) 2.5% 50% no-repeat;}
+
+/* share menu */
+.shareMenu {float: left}
+
+/* blueBox */
+#wlt-DealView .blueBox .buyButton {background: #66bc29 url(../../images/buyButtonBcgRTL.png) 0 0 no-repeat; padding: 0 19px 0 0;float: left;}
+#wlt-DealView .blueBox .unavailable {padding-left: 0; padding-right: 5px;}
+
+/* timeLeft */
+#wlt-DealTimeLeft h3 {background-position: right top; padding-right: 50px; padding-left: 0;}
+
+/* user menu */
+#wlt-UserMenu .welcome {float: left; width:230px; background: url(../../images/mainMenuSep.gif) right 11px no-repeat;}
+#wlt-UserMenu .welcome div {padding: .7em 1em 0 0}
+
+/* tabs */
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected,
+.ui-tabs .ui-tabs-nav li.ui-state-default {float: right; }
+.ui-tabs .ui-tabs-nav li a { float: right; }
+#page .ui-tabs .ui-tabs-nav {margin-right: 14px;}
+
+/* recent deals */
+.recentDeal .info label {text-align: left;}
+
+/* slideshow */
+.classic-theme .wlt-DealSlideshow .controls {float: left;}
+
+.classic-theme .recentDeal {float: right; margin: 0 0 1.5em 2em}
+.classic-theme .recentDeal .info label {text-align: left;}
+
+.classic-theme .wlt-DealSlideshow {float: right}
+.classic-theme #wlt-DealStats .info label {width: 70%; text-align: right}
+.classic-theme #wlt-DiscussionIndex table.items td:first-child {text-align:right}
+.classic-theme #wlt-DiscussionIndex table.items th#wlt-DiscussionIndex-grid_c0 {text-align: right;}
+.classic-theme #wlt-DiscussionTopicIndex .message {margin-left: 0; margin-right: 70px;}
+.classic-theme #wlt-FacebookLoginButton {float: right;}
+
+#wlt-DealTwitter h3 a { background: url(../../images/twitter.gif) right 10px no-repeat; padding: 17px 80px 10px 0; height: 51px; margin: 0 10px 0 0;}

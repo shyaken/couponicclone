@@ -1,0 +1,30 @@
+.classic-theme-mobile ul {margin: 10px;}
+
+form .row {
+    text-align: left;
+}
+form label {
+	text-align: right;
+}
+/* worklet specific */
+#wlt-DealView h1 a.slide {
+float: left;
+}
+.classic-theme-mobile .wlt-DealSlideshow .controls {float: left;}
+.classic-theme-mobile .wlt-DealSlideshow .controls a {float: right;}
+
+#wlt-DealSide li.sideDeal img {margin-right: 0; margin-left: 10px; float: right;}
+#wlt-DealCoupons li img {float: right;}
+
+/* jquery ui slider */
+.classic-theme-mobile #wlt-DealPrint .couponId {float: left;text-align: left;}
+
+/* universal arrows */
+
+ul li.arrow {
+    padding-right: 40px;
+}
+
+#plastic ul li.arrow, #metal ul li.arrow {
+    padding-right: 40px;
+}
